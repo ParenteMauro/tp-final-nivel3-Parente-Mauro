@@ -3,32 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|c:\\users\\mauro\\desktop\\tpfinalnivel3_parente\\tpfinalnivel3_parente\\altaarticulo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|solutionrelative:tpfinalnivel3_parente\\altaarticulo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|c:\\users\\mauro\\desktop\\tpfinalnivel3_parente\\tpfinalnivel3_parente\\altaarticulo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|solutionrelative:tpfinalnivel3_parente\\altaarticulo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|c:\\users\\mauro\\desktop\\tpfinalnivel3_parente\\tpfinalnivel3_parente\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|solutionrelative:tpfinalnivel3_parente\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|c:\\users\\mauro\\desktop\\tpfinalnivel3_parente\\tpfinalnivel3_parente\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|solutionrelative:tpfinalnivel3_parente\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|c:\\users\\mauro\\desktop\\tpfinalnivel3_parente\\tpfinalnivel3_parente\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\tpfinalnivel3_parente\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|solutionrelative:tpfinalnivel3_parente\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D30FEA0A-D072-48AA-B658-C9BE30D97006}|negocio\\negocio.csproj|c:\\users\\mauro\\desktop\\tpfinalnivel3_parente\\negocio\\seguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D30FEA0A-D072-48AA-B658-C9BE30D97006}|negocio\\negocio.csproj|solutionrelative:negocio\\seguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\tpfinalnivel3_parente\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|solutionrelative:tpfinalnivel3_parente\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|c:\\users\\mauro\\desktop\\tpfinalnivel3_parente\\tpfinalnivel3_parente\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|solutionrelative:tpfinalnivel3_parente\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\tpfinalnivel3_parente\\altaarticulo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|solutionrelative:tpfinalnivel3_parente\\altaarticulo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|c:\\users\\mauro\\desktop\\tpfinalnivel3_parente\\tpfinalnivel3_parente\\listaarticulos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|solutionrelative:tpfinalnivel3_parente\\listaarticulos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|c:\\users\\mauro\\desktop\\tpfinalnivel3_parente\\tpfinalnivel3_parente\\listaarticulos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|solutionrelative:tpfinalnivel3_parente\\listaarticulos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\tpfinalnivel3_parente\\altaarticulo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDEF9EB4-FCA7-4C73-9FF5-7CA71471015C}|TPFinalNivel3_Parente\\TPFinalNivel3_Parente.csproj|solutionrelative:tpfinalnivel3_parente\\altaarticulo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03AA1C82-AC9B-4576-8B2B-690618EDC4A1}|dominio\\dominio.csproj|c:\\users\\mauro\\desktop\\tpfinalnivel3_parente\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AA1C82-AC9B-4576-8B2B-690618EDC4A1}|dominio\\dominio.csproj|solutionrelative:dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,24 +42,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "Articulo.cs",
+              "DocumentMoniker": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\dominio\\Articulo.cs",
+              "RelativeDocumentMoniker": "dominio\\Articulo.cs",
+              "ToolTip": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\dominio\\Articulo.cs",
+              "RelativeToolTip": "dominio\\Articulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T17:10:34.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListaArticulos.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\ListaArticulos.aspx.cs",
+              "RelativeDocumentMoniker": "TPFinalNivel3_Parente\\ListaArticulos.aspx.cs",
+              "ToolTip": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\ListaArticulos.aspx.cs",
+              "RelativeToolTip": "TPFinalNivel3_Parente\\ListaArticulos.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T16:10:34.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ListaArticulos.aspx",
+              "DocumentMoniker": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\ListaArticulos.aspx",
+              "RelativeDocumentMoniker": "TPFinalNivel3_Parente\\ListaArticulos.aspx",
+              "ToolTip": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\ListaArticulos.aspx",
+              "RelativeToolTip": "TPFinalNivel3_Parente\\ListaArticulos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-24T16:04:36.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AltaArticulo.aspx.cs",
               "DocumentMoniker": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\AltaArticulo.aspx.cs",
               "RelativeDocumentMoniker": "TPFinalNivel3_Parente\\AltaArticulo.aspx.cs",
               "ToolTip": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\AltaArticulo.aspx.cs",
               "RelativeToolTip": "TPFinalNivel3_Parente\\AltaArticulo.aspx.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAgwB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAwwIIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T12:35:45.462Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AltaArticulo.aspx",
               "DocumentMoniker": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\AltaArticulo.aspx",
               "RelativeDocumentMoniker": "TPFinalNivel3_Parente\\AltaArticulo.aspx",
@@ -68,46 +111,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\Global.asax.cs",
-              "RelativeDocumentMoniker": "TPFinalNivel3_Parente\\Global.asax.cs",
-              "ToolTip": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\Global.asax.cs",
-              "RelativeToolTip": "TPFinalNivel3_Parente\\Global.asax.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T11:52:37.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Seguridad.cs",
-              "DocumentMoniker": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\negocio\\Seguridad.cs",
-              "RelativeDocumentMoniker": "negocio\\Seguridad.cs",
-              "ToolTip": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\negocio\\Seguridad.cs",
-              "RelativeToolTip": "negocio\\Seguridad.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T10:09:12.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Default.aspx.cs",
               "DocumentMoniker": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\Default.aspx.cs",
               "RelativeDocumentMoniker": "TPFinalNivel3_Parente\\Default.aspx.cs",
               "ToolTip": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\Default.aspx.cs",
               "RelativeToolTip": "TPFinalNivel3_Parente\\Default.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T10:04:41.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Default.aspx",
               "DocumentMoniker": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\Default.aspx",
               "RelativeDocumentMoniker": "TPFinalNivel3_Parente\\Default.aspx",
@@ -120,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Site1.Master",
               "DocumentMoniker": "C:\\Users\\mauro\\Desktop\\TPFinalNivel3_Parente\\TPFinalNivel3_Parente\\Site1.Master",
               "RelativeDocumentMoniker": "TPFinalNivel3_Parente\\Site1.Master",

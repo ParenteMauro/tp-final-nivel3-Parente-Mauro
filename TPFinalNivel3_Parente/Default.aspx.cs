@@ -13,11 +13,9 @@ namespace TPFinalNivel3_Parente
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["listaArticulos"] == null)
-            {
                 ArticulosNegocio negocio= new ArticulosNegocio();
                 Session["listaArticulos"] = negocio.listar();
-            }
+            
             
         }
     }

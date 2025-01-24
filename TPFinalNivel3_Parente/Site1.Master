@@ -31,29 +31,26 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" style="color: #ffffff; text-decoration: none;">Home</a>
+                        <a class="nav-link" href="Default.aspx" style="color: #ffffff; text-decoration: none;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #ffffff; text-decoration: none;">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffffff;">Dropdown</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #e6e6fa;">
-                            <a class="dropdown-item" href="#" style="color: #4c4c82;">Action</a>
-                            <a class="dropdown-item" href="#" style="color: #4c4c82;">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#" style="color: #4c4c82;">Something else here</a>
-                        </div>
-                    </li>
+                        <a class="nav-link" href="ListaArticulos.aspx" style="color: #ffffff; text-decoration: none;">Lista de Artículos</a>
+                    </li>  
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" style="color: #cccccc;">Disabled</a>
+                        <a class="nav-link" href="AltaArticulo.aspx" style="color: #ffffff; text-decoration: none;">Agregar Artículo</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #ffffff;">Mi Perfil</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
+    <div style="display:flex; justify-content:center; align-items:center;">
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
     </asp:ContentPlaceHolder>
+        </div>
 </form>
 </body>
 </html>
