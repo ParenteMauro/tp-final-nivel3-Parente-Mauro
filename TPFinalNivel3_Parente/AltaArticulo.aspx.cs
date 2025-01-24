@@ -11,6 +11,7 @@ namespace TPFinalNivel3_Parente
 {
     public partial class AltaArticulo1 : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -63,6 +64,7 @@ namespace TPFinalNivel3_Parente
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
+         
             ArticulosNegocio negocioArticulo = new ArticulosNegocio();
 
 
@@ -74,6 +76,7 @@ namespace TPFinalNivel3_Parente
                 articulo.Nombre = txtNombre.Text;
                 articulo.Codigo = txtCodigo.Text;
                 articulo.Descripcion = txtDescripcion.Text;
+                if(!(txtPrecio.Text.Any(char.IsLetter)))
                 articulo.Precio = decimal.Parse(txtPrecio.Text);
                 articulo.Marca = new Marca();
                 articulo.Marca.Id = dwlMarca.SelectedIndex;
@@ -88,14 +91,16 @@ namespace TPFinalNivel3_Parente
                     articulo.UrlImagen = txtImagen.Text;
                 }
 
-                if(Request.QueryString["id"] != null) 
+                if (Request.QueryString["id"] == null) 
                 { 
-                negocioArticulo.modificar(articulo);
-                Response.Redirect("Default.aspx", false);
+                    negocioArticulo.agregar(articulo);
+                    Response.Redirect("Default.aspx", false);
+                
                 }
                 else
                 {
-                    negocioArticulo.agregar(articulo);
+                    articulo.Id = int.Parse(Request.QueryString["id"]);
+                    negocioArticulo.modificar(articulo);
                     Response.Redirect("Default.aspx", false);
                 }
             }
@@ -130,5 +135,7 @@ namespace TPFinalNivel3_Parente
             negocio.eliminar(int.Parse(Request.QueryString["id"]));
             Response.Redirect("Default.aspx", false);
         }
+
+      
     }
 }

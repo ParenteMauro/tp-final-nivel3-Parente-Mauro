@@ -10,8 +10,11 @@
             const dwlMarca = document.getElementById("dwlMarca");
             const dwlCategoria = document.getElementById("dwlCategoria");
             const camposNecesarios = document.getElementById("camposNecesarios");
-
-            if (txtCodigo.value == "" || txtNombre.value == "" || dwlMarca.selectedIndex === 0 || dwlCategoria.selectedIndex === 0) {
+            const txtPrecio = document.getElementById("txtPrecio");
+            const precioRegex = /^(\d+(\.\d{1,2})?)?$/;
+            const precioAlert = document.getElementById("precioAlert");
+            if (txtCodigo.value == "" || txtNombre.value == "" || dwlMarca.selectedIndex === 0 || dwlCategoria.selectedIndex === 0 ||
+            (!precioRegex.test(txtPrecio.value)) ) {
 
                 if (txtNombre.value == "")
                     txtNombre.classList.add("is-invalid");
@@ -36,7 +39,17 @@
                 else
                     txtCodigo.classList.remove("is-invalid");
                 txtCodigo.classList.add("is-valid");
+                
+                if (!precioRegex.test(txtPrecio.value)  ) {
+                    txtPrecio.classList.add("is-invalid");
+                    precioAlert.style.visibility = "visible";
+                }
+                else {
+                    txtPrecio.classList.remove("is-invalid");
+                    precioAlert.style.visibility = "visible: true";
+                    txtPrecio.classList.add("is-valid")
 
+                }
 
                 camposNecesarios.style.color = "red";
 
@@ -47,6 +60,8 @@
 
             else
                 return true;
+
+
         }
 
 
@@ -70,16 +85,16 @@
             </div>
 
             <div class="form-group mt-3">
-                <label class="form-check-inline">Nombre:*</label>
-            </div>
-            <div class="form-group mt-3">
                 <label class="sr-only" for="inlineFormInputGroupUsername2">Precio</label>
                 <div class="input-group mb-2 mr-sm-2">
                     <div class="input-group-prepend">
-                        <div class="input-group-text " style="color:green; background-color:lightgreen;user-select: none; border-color:green">$</div>
+                        <div class="input-group-text " style="color: green; background-color: lightgreen; user-select: none; border-color: green">$</div>
                     </div>
-                    <asp:TextBox runat="server" ClientIDMode="Static" CssClass="form-control" BorderColor="green" ID="txtPrecio"></asp:TextBox>    
+                    <asp:TextBox runat="server" ClientIDMode="Static" CssClass="form-control" BorderColor="green" ID="txtPrecio"></asp:TextBox>
+
                 </div>
+                <p style="color: darkred; visibility:hidden;" id="precioAlert">El precio solo puede contener números y un punto</p>
+
             </div>
             <div class="form-group mt-3">
                 <label class="form-check-inline">Descripción:</label>
@@ -113,12 +128,12 @@
         </div>
 
         <div class="container mt-4 col-6">
-            <asp:Button runat="server" Text="Agregar" ID="btnAgregar" CssClass="btn btn-success" OnClientClick="return comprobarCampos()" OnClick="btnAgregar_Click" />
+            <asp:Button runat="server" Text="Agregar" ID="btnAgregar" CssClass="btn btn-success" OnClientClick="return comprobarCampos()" OnClick="btnAgregar_Click"/>
             <asp:Button runat="server" Text="Eliminar" ID="btnEliminar" CssClass="btn btn-outline-danger" OnClientClick="return comprobarCampos()" OnClick="btnEliminar_Click" />
-            <div style="display:flex; justify-content:center;"  id="preguntaEliminar" runat="server">
+            <div style="display: flex; justify-content: center;" id="preguntaEliminar" runat="server">
                 <label class="mt-2">¿Estás seguro de querer eliminar el Artículo?</label>
-                <asp:Button Text="Si" ID="btnSeguroEliminar" CssClass="btn btn-danger m-1" runat="server" OnClick="btnSeguroEliminar_Click"/>
-                <asp:Button Text="NO" ID="btnCancelar" CssClass="btn btn-primary m-1" runat="server" OnClick="btnCancelar_Click"/>
+                <asp:Button Text="Si" ID="btnSeguroEliminar" CssClass="btn btn-danger m-1" runat="server" OnClick="btnSeguroEliminar_Click" />
+                <asp:Button Text="NO" ID="btnCancelar" CssClass="btn btn-primary m-1" runat="server" OnClick="btnCancelar_Click" />
             </div>
         </div>
         <div class="col-6 mt-4" style="text-align: right">
