@@ -1,0 +1,12 @@
+C:\Users\mauro\Desktop\TpNv2Final\TPFinalNivel2_Parente\dominio\bin\Debug\dominio.dll
+C:\Users\mauro\Desktop\TpNv2Final\TPFinalNivel2_Parente\dominio\bin\Debug\dominio.pdb
+C:\Users\mauro\Desktop\TpNv2Final\TPFinalNivel2_Parente\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\mauro\Desktop\TpNv2Final\TPFinalNivel2_Parente\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\mauro\Desktop\TpNv2Final\TPFinalNivel2_Parente\dominio\obj\Debug\dominio.dll
+C:\Users\mauro\Desktop\TpNv2Final\TPFinalNivel2_Parente\dominio\obj\Debug\dominio.pdb
+C:\Users\mauro\Desktop\TPFinalNivel3_Parente\dominio\bin\Debug\dominio.dll
+C:\Users\mauro\Desktop\TPFinalNivel3_Parente\dominio\bin\Debug\dominio.pdb
+C:\Users\mauro\Desktop\TPFinalNivel3_Parente\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\mauro\Desktop\TPFinalNivel3_Parente\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\mauro\Desktop\TPFinalNivel3_Parente\dominio\obj\Debug\dominio.dll
+C:\Users\mauro\Desktop\TPFinalNivel3_Parente\dominio\obj\Debug\dominio.pdb
