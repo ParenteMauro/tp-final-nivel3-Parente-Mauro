@@ -12,7 +12,7 @@ namespace negocio
     
     public class ArticulosNegocio
     {
-        public AccesoDatos conexion = new AccesoDatos();
+        private AccesoDatos conexion = new AccesoDatos();
 
         public List<Articulo> listar()
         {

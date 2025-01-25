@@ -13,6 +13,10 @@ namespace TPFinalNivel3_Parente
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["user"] == null || ((User)Session["user"]).Admin == false)
+            {
+                Response.Redirect("Default.aspx", false);
+            }
             if (!IsPostBack)
             {
                 try

@@ -8,6 +8,7 @@ namespace dominio
 {
     public class User
     {
+
         public int Id { get; set; }
         public string Email { get; set; }
 
@@ -16,6 +17,8 @@ namespace dominio
         public string Apellido { get; set; }
         public string Nombre { get; set; }
         public string urlImagenPerfil { get; set; }
+
+        public bool Admin {  get; set; }    
 
     }
 }

@@ -13,44 +13,55 @@
 
 </head>
 <body>
-<form id="form1" runat="server">
-    <div>
-        <nav class="navbar navbar-expand-lg" style="background-color: #563d7c;">
-            <a class="navbar-brand" href="#" style="
-                font-family: Arial, sans-serif; 
-                font-weight: bold; 
-                font-size: 1.5rem; 
-                color: lightgoldenrodyellow; 
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-                text-decoration: none;
-            ">🛠️ Artículos</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg" style="background-color: #563d7c;">
+                <a class="navbar-brand" href="#" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 1.5rem; color: lightgoldenrodyellow; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); text-decoration: none;">🛠️ Artículos</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="Default.aspx" style="color: #ffffff; text-decoration: none;">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ListaArticulos.aspx" style="color: #ffffff; text-decoration: none;">Lista de Artículos</a>
-                    </li>  
-                    <li class="nav-item">
-                        <a class="nav-link" href="AltaArticulo.aspx" style="color: #ffffff; text-decoration: none;">Agregar Artículo</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #ffffff;">Mi Perfil</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div style="display:flex; flex-wrap: wrap ; justify-content:center; align-items:center;">
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-    </asp:ContentPlaceHolder>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Default.aspx" style="color: #ffffff; text-decoration: none;">Home</a>
+                        </li>
+                        <%  if (Session["user"] != null)
+                            {
+                                if (((dominio.User)Session["user"]).Admin)
+                                { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ListaArticulos.aspx" style="color: #ffffff; text-decoration: none;">Lista de Artículos</a>
+                        </li>
+                        <%}
+                        }%>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AltaArticulo.aspx" style="color: #ffffff; text-decoration: none;">Agregar Artículo</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Perfil.aspx" style="color: #ffffff;">Mi Perfil</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <%if (Session["user"] == null)
+                        { %>
+                    <a href="LogIn.aspx" class="btn btn-dark" id="btnIngresar" style="background-color: mediumpurple" runat="server">Ingresar</a>
+                    <a href="Registrarse.aspx" class="btn btn-dark" id="btnRegistro" style="background-color: mediumpurple" runat="server">Registrarse</a>
+                    <%  }
+                    else
+                    {%>
+                    <asp:Button class="btn btn-dark" id="btnCerrarSesion" Text="Cerrar Sesión" style="background-color: mediumpurple" runat="server" OnClick="btnCerrarSesion_Click"></asp:Button>
+                   <% }%>
+                </div>
+            </nav>
         </div>
-</form>
+        <div style="display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
 </body>
 </html>

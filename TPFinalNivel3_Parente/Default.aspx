@@ -27,7 +27,7 @@
          
             <div class="card-footer">
                 <small>
-                    <button class="btn btn-dark" runat="server" id="btnMas">Ver mas</button>
+                    <a href="Detalle.aspx?id=<%: articulo.Id %>" class="btn btn-dark">Ver más</a>
                 </small>
             </div>
         </div>

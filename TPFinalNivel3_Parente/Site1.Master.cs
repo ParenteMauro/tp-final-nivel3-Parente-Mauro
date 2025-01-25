@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dominio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,16 @@ namespace TPFinalNivel3_Parente
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["user"] == null)
+            {
+                
+            }
+        }
 
+        protected void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Session.Remove("user");
+            Response.Redirect("Default.aspx", false);
         }
     }
 }
