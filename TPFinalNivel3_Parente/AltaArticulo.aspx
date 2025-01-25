@@ -11,10 +11,14 @@
             const dwlCategoria = document.getElementById("dwlCategoria");
             const camposNecesarios = document.getElementById("camposNecesarios");
             const txtPrecio = document.getElementById("txtPrecio");
+            var precio = false;
             const precioRegex = /^(\d+(\.\d{1,2})?)?$/;
             const precioAlert = document.getElementById("precioAlert");
-            if (txtCodigo.value == "" || txtNombre.value == "" || dwlMarca.selectedIndex === 0 || dwlCategoria.selectedIndex === 0 ||
-            (!precioRegex.test(txtPrecio.value)) ) {
+            
+            if (txtPrecio.value !== "") {
+                precio = true;
+            }
+            if (txtCodigo.value == "" || txtNombre.value == "" || dwlMarca.selectedIndex === 0 || dwlCategoria.selectedIndex === 0 || !precioRegex.test(txtPrecio.value)) {
 
                 if (txtNombre.value == "")
                     txtNombre.classList.add("is-invalid");
@@ -39,12 +43,12 @@
                 else
                     txtCodigo.classList.remove("is-invalid");
                 txtCodigo.classList.add("is-valid");
-                
-                if (!precioRegex.test(txtPrecio.value)  ) {
+
+                if (!precioRegex.test(txtPrecio.value) && precio == true) {
                     txtPrecio.classList.add("is-invalid");
                     precioAlert.style.visibility = "visible";
                 }
-                else {
+                else if (precioRegex.test(txtPrecio.value) && precio == true) {
                     txtPrecio.classList.remove("is-invalid");
                     precioAlert.style.visibility = "visible: true";
                     txtPrecio.classList.add("is-valid")
@@ -93,7 +97,7 @@
                     <asp:TextBox runat="server" ClientIDMode="Static" CssClass="form-control" BorderColor="green" ID="txtPrecio"></asp:TextBox>
 
                 </div>
-                <p style="color: darkred; visibility:hidden;" id="precioAlert">El precio solo puede contener números y un punto</p>
+                <p style="color: darkred; visibility: hidden;" id="precioAlert">El precio solo puede contener números y un punto</p>
 
             </div>
             <div class="form-group mt-3">
@@ -128,7 +132,7 @@
         </div>
 
         <div class="container mt-4 col-6">
-            <asp:Button runat="server" Text="Agregar" ID="btnAgregar" CssClass="btn btn-success" OnClientClick="return comprobarCampos()" OnClick="btnAgregar_Click"/>
+            <asp:Button runat="server" Text="Agregar" ID="btnAgregar" CssClass="btn btn-success" OnClientClick="return comprobarCampos()" OnClick="btnAgregar_Click" />
             <asp:Button runat="server" Text="Eliminar" ID="btnEliminar" CssClass="btn btn-outline-danger" OnClientClick="return comprobarCampos()" OnClick="btnEliminar_Click" />
             <div style="display: flex; justify-content: center;" id="preguntaEliminar" runat="server">
                 <label class="mt-2">¿Estás seguro de querer eliminar el Artículo?</label>

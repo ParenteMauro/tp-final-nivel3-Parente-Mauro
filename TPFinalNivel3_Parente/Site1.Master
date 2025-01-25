@@ -15,7 +15,7 @@
 <body>
 <form id="form1" runat="server">
     <div>
-        <nav class="navbar navbar-expand-lg" style="background-color: #b19cd9;">
+        <nav class="navbar navbar-expand-lg" style="background-color: #563d7c;">
             <a class="navbar-brand" href="#" style="
                 font-family: Arial, sans-serif; 
                 font-weight: bold; 
@@ -47,7 +47,7 @@
             </div>
         </nav>
     </div>
-    <div style="display:flex; justify-content:center; align-items:center;">
+    <div style="display:flex; flex-wrap: wrap ; justify-content:center; align-items:center;">
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
     </asp:ContentPlaceHolder>
         </div>
