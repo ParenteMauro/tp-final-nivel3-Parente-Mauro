@@ -18,6 +18,7 @@
             user-select: none;
         }
     </style>
+    <h3 class="m-3"><u>Lista de Artículos</u></h3>
     <asp:ScriptManager runat="server"></asp:ScriptManager>
     <asp:UpdatePanel runat="server">
         <ContentTemplate>

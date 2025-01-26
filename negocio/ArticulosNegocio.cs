@@ -243,5 +243,32 @@ namespace negocio
             return respuesta;
 
         }
+
+        public Articulo traerArticulo(int id)
+        {
+            AccesoDatos conexionA = new AccesoDatos();
+            try { 
+            conexionA.setearConsulta("SELECT Id, Nombre, ImagenUrl FROM ARTICULOS Where Id = @id");
+            conexionA.setearParametro("@id", id);
+            SqlDataReader lector = conexionA.lectura();
+            Articulo articulo = new Articulo();
+            while (lector.Read())
+            {
+                articulo.Id = (int)lector["id"];
+                articulo.Nombre = (string)lector["Nombre"];
+                articulo.UrlImagen = (string)lector["ImagenUrl"];
+
+            }
+            return articulo;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conexionA.cerrarConexion();
+            }
+        }
     }
 }

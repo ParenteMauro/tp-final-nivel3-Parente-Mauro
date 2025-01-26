@@ -3,6 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+        
+        <h3 class="mt-3"><u>Mi Perfil</u></h3>
     <div style="background-color: rgb(33, 37, 41); color: snow; border-radius:10px;" class="row mt-3 pb-3" >
         <hr />
         <div class="input-group">

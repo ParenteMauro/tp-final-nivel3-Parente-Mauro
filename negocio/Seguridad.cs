@@ -11,6 +11,19 @@ namespace negocio
 {
     public static class Seguridad
     {
+        public static bool sesionIniciada(object usuario)
+        {
+            User user = (User)usuario;
+            if (user != null  && user.Id != 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+                
+            }
+        }
         public static bool comprobarTexto(TextBox textBox)
         {
             if(textBox.Text != "")

@@ -21,7 +21,7 @@ namespace negocio
                 SqlDataReader lector = conexion.lectura();
                 User usuario = new User();
 
-                if(lector.Read())
+                if (lector.Read())
                 {
                     usuario.Id = (int)lector["id"];
                     usuario.Email = user;
@@ -76,6 +76,87 @@ namespace negocio
                 conexion.cerrarConexion();
             }
 
+        }
+
+        public void registrarse(string email, string pass, string nombre, string apellido)
+        {
+            AccesoDatos conexion = new AccesoDatos();
+
+            try
+            {
+
+
+                string consulta1er = "INSERT INTO USERS (email, pass";
+                string consulta2nd = "VALUES(@email, @pass";
+
+                if (nombre != "")
+                {
+                    consulta1er += ",nombre";
+                    consulta2nd += ",@nombre";
+                }
+                if (apellido != "")
+                {
+                    consulta1er += ",apellido";
+                    consulta2nd += ",@apellido";
+                }
+
+                consulta1er += ")";
+                consulta2nd += ")";
+
+                string consulta = consulta1er + consulta2nd;
+                conexion.setearConsulta(consulta);
+                conexion.setearParametro("@email", email);
+                conexion.setearParametro("@pass", pass);
+                if (nombre != "")
+                    conexion.setearParametro("@nombre", nombre);
+                if (apellido != "")
+                    conexion.setearParametro("@apellido", apellido);
+
+                conexion.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conexion.cerrarConexion();
+            }
+
+
+
+        }
+
+        public bool comprobarRegistro(string email)
+        {
+            AccesoDatos conexion = new AccesoDatos();
+            try
+            {
+                conexion.setearConsulta("SELECT id FROM USERS WHERE email=@email");
+                conexion.setearParametro("@email", email);
+                SqlDataReader lector = conexion.lectura();
+
+                if (lector.Read())
+                {
+                    if ((int)lector["id"] != 0)
+                        return true;
+                    else
+                        return false;
+                }
+                else
+                    return false;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conexion.cerrarConexion();
+
+            }
         }
     }
 }

@@ -15,11 +15,12 @@
             font-size: 50px; /* Tamaño de la estrella */
             font-family: Arial, sans-serif; /* Fuente para los caracteres de estrella */
             background-color: transparent;
-            justify-content:right;
+            justify-content: right;
             border: none;
             cursor: pointer;
             transition: all 0.3s ease;
             color: snow;
+            user-select: none;
         }
 
             .botonEstrella:hover::before {
@@ -34,8 +35,8 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   
-    <div class="container row m-3 border p-3" style="border-radius: 5px; padding: 0%; width: 50%; background-color: rgb(33, 37, 41)">
+
+    <div class="container row m-3 border p-3" style="border-radius: 10px; padding: 0%; width: 50%; background-color: rgb(33, 37, 41)">
         <div class="container col " style="display: flex; justify-content: center; align-items: center;">
 
             <div class="container" style="display: flex; justify-content: center;">
@@ -76,17 +77,21 @@
 
                 </div>
             </div>
-            <div>
-                
-                <button class="botonEstrella"></button>
+            <asp:ScriptManager runat="server"></asp:ScriptManager>
+            <div style="user-select:none;">
+                <asp:UpdatePanel runat="server">
+                    <ContentTemplate>
+                        <asp:Button ID="btnFav" runat="server" CssClass="botonEstrella" OnClick="btnFav_Click" Text="☆" />
+                    </ContentTemplate>
+                </asp:UpdatePanel>
             </div>
 
 
         </div>
 
     </div>
-    <div>
-    <a href="Default.aspx" class="btn btn-primary"> Volver al Home </a>
-        </div>
-    
+    <div >
+        <a href="Default.aspx" class="btn btn-primary">Volver al Home </a>
+    </div>
+
 </asp:Content>

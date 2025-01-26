@@ -75,8 +75,8 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-
+    <h3 class="mt-3" id="txtTituloPagina" runat="server"><u>Agregar Artículo</u></h3>
+    
     <div class="container row m-3 border p-3" style="border-radius: 5px">
         <div class="container col-6">
             <div class="form-group ">

@@ -15,15 +15,25 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container mt-3 divLogIn" style="width: 50%">
-        <h3>Registrarse</h3>
+    <div class="container mt-3 divLogIn pb-2" style="width: 50%">
+        <h3 class="mt-3">Registrarse</h3>
         <div style="width: 80%">
             <label style="justify-content: left">Email:</label>
             <asp:TextBox runat="server" CssClass="form-control" ID="txtEmail"></asp:TextBox>
+            
+
             <label>Contraseña:</label>
             <asp:TextBox runat="server" CssClass="form-control" ID="txtPass"></asp:TextBox>
+            
+            <hr />
+            <h4>Opcionales</h4>
+            <label style="justify-content: left">Nombre:</label>
+            <asp:TextBox runat="server" CssClass="form-control" ID="txtNombre"></asp:TextBox>
+            <label>Apellido:</label>
+            <asp:TextBox runat="server" CssClass="form-control" ID="txtApellido"></asp:TextBox>
         </div>
-        <asp:Button runat="server" CssClass="btn btn-light mt-3" Text="Ingresar" ID="btnRegistro"></asp:Button>
+        
+        <asp:Button runat="server" CssClass="btn btn-light mt-5" Text="Registrarse" ID="btnRegistro" OnClick="btnRegistro_Click"></asp:Button>
         <asp:Label CssClass="mt-3" ID="txtRegistroFallido" runat="server"></asp:Label>
     </div>
 </asp:Content>

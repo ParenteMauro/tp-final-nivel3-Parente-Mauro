@@ -45,7 +45,7 @@ namespace TPFinalNivel3_Parente
                 if (Request.QueryString["id"] != null)
                 {
                     Articulo articuloSeleccionado = (Articulo)Session["articuloSeleccionado"];
-
+                    txtTituloPagina.InnerText = "<u>Modificar Artículo</u>";
                     txtNombre.Text= articuloSeleccionado.Nombre;
                     txtCodigo.Text= articuloSeleccionado.Codigo;
                     txtDescripcion.Text = articuloSeleccionado.Descripcion;

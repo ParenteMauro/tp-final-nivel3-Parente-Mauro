@@ -1,4 +1,5 @@
 ﻿using dominio;
+using negocio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,19 @@ namespace TPFinalNivel3_Parente
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["user"] == null)
+            if (!(Page is LogIn || Page is Registro || Page is Default || Page is Detalle))
             {
-                
+                if (!(Seguridad.sesionIniciada(Session["user"])))
+                {
+                    Response.Redirect("LogIn.aspx", false);
+
+                }
+            }
+
+            if (Seguridad.sesionIniciada((User)Session["user"]))
+            {
+                if (Seguridad.ImagenValida(((User)Session["user"]).urlImagenPerfil))
+                imgUser.ImageUrl = ((User)Session["user"]).urlImagenPerfil;
             }
         }
 

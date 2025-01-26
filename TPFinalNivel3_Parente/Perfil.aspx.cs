@@ -13,14 +13,21 @@ namespace TPFinalNivel3_Parente
         private User user;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["user"] != null && !IsPostBack)
+            if (Seguridad.sesionIniciada(Session["user"]))
             {
+                if (!IsPostBack) { 
                 user = (User)Session["user"];
                 txtEmail.Text = user.Email;
                 txtEmail.Enabled = false;
                 txtNombre.Text = user.Nombre;
                 txtApellido.Text = user.Apellido;
-                txtImagen.Text = user.urlImagenPerfil;
+                    if (user.urlImagenPerfil != "")
+                    {
+                        txtImagen.Text = user.urlImagenPerfil;
+                        pbxImagen.ImageUrl = txtImagen.Text;
+                    }
+                    
+                }
             }
             else
             {

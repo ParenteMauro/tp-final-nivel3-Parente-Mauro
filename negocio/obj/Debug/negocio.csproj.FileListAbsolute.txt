@@ -16,3 +16,5 @@ C:\Users\mauro\Desktop\TPFinalNivel3_Parente\negocio\obj\Debug\negocio.csproj.Co
 C:\Users\mauro\Desktop\TPFinalNivel3_Parente\negocio\obj\Debug\negocio.csproj.Up2Date
 C:\Users\mauro\Desktop\TPFinalNivel3_Parente\negocio\obj\Debug\negocio.dll
 C:\Users\mauro\Desktop\TPFinalNivel3_Parente\negocio\obj\Debug\negocio.pdb
+C:\Users\mauro\Desktop\TPFinalNivel3_Parente\negocio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\mauro\Desktop\TPFinalNivel3_Parente\negocio\bin\Debug\System.Data.SqlClient.xml

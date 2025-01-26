@@ -5,6 +5,7 @@
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/977/20/png-transparent-furnace-oven-kitchen-cartoon-oven-cartoon-character-electronics-painted.png">
     <title>Articulos</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -26,6 +27,8 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="Default.aspx" style="color: #ffffff; text-decoration: none;">Home</a>
                         </li>
+
+
                         <%  if (Session["user"] != null)
                             {
                                 if (((dominio.User)Session["user"]).Admin)
@@ -33,28 +36,34 @@
                         <li class="nav-item">
                             <a class="nav-link" href="ListaArticulos.aspx" style="color: #ffffff; text-decoration: none;">Lista de Artículos</a>
                         </li>
-                        <%}
-                        }%>
-                        <li class="nav-item">
-                            <a class="nav-link" href="AltaArticulo.aspx" style="color: #ffffff; text-decoration: none;">Agregar Artículo</a>
-                        </li>
+                        <%}%>
 
                         <li class="nav-item">
                             <a class="nav-link" href="Perfil.aspx" style="color: #ffffff;">Mi Perfil</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="AltaArticulo.aspx" style="color: #ffffff; text-decoration: none;">Agregar Artículo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Favoritos.aspx" style="color: #ffffff; text-decoration: none;">Mis Favoritos</a>
+                        </li>
+                        <% }%>
                     </ul>
                 </div>
                 <div>
                     <%if (Session["user"] == null)
                         { %>
                     <a href="LogIn.aspx" class="btn btn-dark" id="btnIngresar" style="background-color: mediumpurple" runat="server">Ingresar</a>
-                    <a href="Registrarse.aspx" class="btn btn-dark" id="btnRegistro" style="background-color: mediumpurple" runat="server">Registrarse</a>
+                    <a href="Registro.aspx" class="btn btn-dark" id="btnRegistro" style="background-color: mediumpurple" runat="server">Registrarse</a>
                     <%  }
-                    else
-                    {%>
-                    <asp:Button class="btn btn-dark" id="btnCerrarSesion" Text="Cerrar Sesión" style="background-color: mediumpurple" runat="server" OnClick="btnCerrarSesion_Click"></asp:Button>
-                   <% }%>
+                        else
+                        {
+                    %>
+                    <asp:Image runat="server" Style="height: 40px; width: 40px; border-radius: 50%"
+                        ID="imgUser" ImageUrl="https://photosnow.net/wp-content/uploads/2024/04/no-dp-mood-off_9.jpg" />
+                    <asp:Button class="btn btn-dark" ID="btnCerrarSesion" Text="Cerrar Sesión" Style="background-color: mediumpurple" runat="server" OnClick="btnCerrarSesion_Click"></asp:Button>
+                    <% }
+                    %>
                 </div>
             </nav>
         </div>
