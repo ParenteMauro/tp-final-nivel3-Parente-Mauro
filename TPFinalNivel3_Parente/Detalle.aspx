@@ -12,8 +12,8 @@
         }
 
         .botonEstrella {
-            font-size: 50px; /* Tamaño de la estrella */
-            font-family: Arial, sans-serif; /* Fuente para los caracteres de estrella */
+            font-size: 50px; 
+            font-family: Arial, sans-serif; 
             background-color: transparent;
             justify-content: right;
             border: none;
@@ -24,12 +24,12 @@
         }
 
             .botonEstrella:hover::before {
-                content: "★"; /* Cambia el contenido a estrella llena */
-                color: gold; /* Cambia el color a dorado */
+                content: "★"; 
+                color: gold; 
             }
 
             .botonEstrella::before {
-                content: "☆"; /* Estrella vacía */
+                content: "☆"; 
             }
     </style>
 </asp:Content>
