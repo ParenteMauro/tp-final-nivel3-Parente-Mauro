@@ -78,12 +78,13 @@
                 </div>
             </div>
             <asp:ScriptManager runat="server"></asp:ScriptManager>
-            <div style="user-select:none;">
+            <div style="user-select:none; display:flex" >
                 <asp:UpdatePanel runat="server">
                     <ContentTemplate>
                         <asp:Button ID="btnFav" runat="server" CssClass="botonEstrella" OnClick="btnFav_Click" Text="☆" />
                     </ContentTemplate>
                 </asp:UpdatePanel>
+                <a href="Favoritos.aspx" class="btn btn-outline-secondary mt-3" style="max-height:40px; color:gold; border-color:gold">Ver Lista Favoritos</a>
             </div>
 
 

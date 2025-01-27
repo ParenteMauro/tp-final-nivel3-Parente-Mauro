@@ -63,15 +63,20 @@ namespace TPFinalNivel3_Parente
             user = (User)Session["user"];
             user.Nombre = txtNombre.Text;
             user.Apellido = txtApellido.Text;
-            user.urlImagenPerfil = txtImagen.Text;
-
+           
             if (txtArchivo.PostedFile.FileName != "")
             {
                 string ruta = Server.MapPath("~/Images/");
                 txtArchivo.PostedFile.SaveAs(ruta + "perfil-" + user.Id + ".jpg");
                 txtImagen.Text = "perfil-" + user.Id + ".jpg";
-                pbxImagen.ImageUrl = "~/Images/" + "perfil-" + user.Id;
+                
                 user.urlImagenPerfil = txtImagen.Text;
+            }
+            else
+            {
+                user.urlImagenPerfil = txtImagen.Text;
+
+
             }
 
 
