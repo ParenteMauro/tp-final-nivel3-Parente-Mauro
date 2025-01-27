@@ -24,8 +24,17 @@ namespace TPFinalNivel3_Parente
 
             if (Seguridad.sesionIniciada((User)Session["user"]))
             {
-                if (Seguridad.ImagenValida(((User)Session["user"]).urlImagenPerfil))
-                imgUser.ImageUrl = ((User)Session["user"]).urlImagenPerfil;
+                if (((User)Session["user"]).urlImagenPerfil != "" && ((User)Session["user"]).urlImagenPerfil != null)
+                {
+                    string imagenPerfil = (((User)Session["user"]).urlImagenPerfil);
+                    if (Seguridad.ImagenValida(imagenPerfil) || imagenPerfil.Contains(".jpg"))
+                    {
+                        if (imagenPerfil.Contains("jpg"))
+                            imgUser.ImageUrl = "~/Images/" + ((User)Session["user"]).urlImagenPerfil;
+                        else
+                            imgUser.ImageUrl = imagenPerfil;
+                    }
+                }
             }
         }
 

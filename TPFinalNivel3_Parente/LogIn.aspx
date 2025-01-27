@@ -24,7 +24,7 @@
 
             <asp:TextBox runat="server" CssClass="form-control" ID="txtPass"></asp:TextBox>
         </div>
-        <asp:Button runat="server" CssClass="btn btn-light mt-3" Text="Registrarse" ID="btnRegistrarse" OnClick="btnLogIn_Click"></asp:Button>
+        <asp:Button runat="server" CssClass="btn btn-light mt-3" Text="Iniciar Sesion" ID="btnLogIn" OnClick="btnLogIn_Click"></asp:Button>
         <asp:Label CssClass="mt-3" ID="txtIngresoFallido" runat="server"></asp:Label>
     </div>
 </asp:Content>

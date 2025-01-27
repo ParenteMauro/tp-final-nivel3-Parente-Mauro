@@ -15,18 +15,28 @@ namespace TPFinalNivel3_Parente
         {
             if (Seguridad.sesionIniciada(Session["user"]))
             {
-                if (!IsPostBack) { 
-                user = (User)Session["user"];
-                txtEmail.Text = user.Email;
-                txtEmail.Enabled = false;
-                txtNombre.Text = user.Nombre;
-                txtApellido.Text = user.Apellido;
-                    if (user.urlImagenPerfil != "")
+                if (!IsPostBack)
+                {
+                    user = (User)Session["user"];
+                    txtEmail.Text = user.Email;
+                    txtEmail.Enabled = false;
+                    txtImagen.Style["display"] = "none";
+                    txtArchivo.Style["display"] = "none";
+                    txtNombre.Text = user.Nombre;
+                    txtApellido.Text = user.Apellido;
+                    if (((User)Session["user"]).urlImagenPerfil != "" && ((User)Session["user"]).urlImagenPerfil != null)
                     {
-                        txtImagen.Text = user.urlImagenPerfil;
-                        pbxImagen.ImageUrl = txtImagen.Text;
+                        string imagenPerfil = (((User)Session["user"]).urlImagenPerfil);
+                        txtImagen.Text = imagenPerfil;
+                        if (Seguridad.ImagenValida(imagenPerfil) || imagenPerfil.Contains(".jpg"))
+                        {
+                            if (imagenPerfil.Contains("jpg"))
+                                pbxImagen.ImageUrl = "~/Images/" + ((User)Session["user"]).urlImagenPerfil;
+                            else
+                                pbxImagen.ImageUrl = imagenPerfil;
+                        }
                     }
-                    
+
                 }
             }
             else
@@ -55,8 +65,30 @@ namespace TPFinalNivel3_Parente
             user.Apellido = txtApellido.Text;
             user.urlImagenPerfil = txtImagen.Text;
 
+            if (txtArchivo.PostedFile.FileName != "")
+            {
+                string ruta = Server.MapPath("~/Images/");
+                txtArchivo.PostedFile.SaveAs(ruta + "perfil-" + user.Id + ".jpg");
+                txtImagen.Text = "perfil-" + user.Id + ".jpg";
+                pbxImagen.ImageUrl = "~/Images/" + "perfil-" + user.Id;
+                user.urlImagenPerfil = txtImagen.Text;
+            }
+
+
             userNegocio.modificar(user.Id, user.Nombre, user.Apellido, user.urlImagenPerfil);
 
+        }
+
+        protected void btnImgLocal_Click(object sender, EventArgs e)
+        {
+            txtImagen.Style["display"] = "none";
+            txtArchivo.Style["display"] = "block";
+        }
+
+        protected void btnUrlImagen_Click(object sender, EventArgs e)
+        {
+            txtArchivo.Style["display"] = "none";
+            txtImagen.Style["display"] = "block";
         }
     }
 }
