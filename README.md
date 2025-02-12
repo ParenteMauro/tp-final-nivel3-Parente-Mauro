@@ -9,6 +9,6 @@
 </ul>
 
 <br>
-<h1>Go to See my App</h1><picture>
+<h1>Go to Test my App</h1><picture>
 
 
